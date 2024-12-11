@@ -4,11 +4,14 @@ app:
 image:
   repository: dougs-test
   tag: 1.0.0
+ingress:
+  host: localhost
+  name: dougs-test-ingress
 service:
-  port: 8080
-  targetPort: 8080
+  port: 80
+  targetPort: 80
   name: dougs-test-service
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: dougs-test
 
