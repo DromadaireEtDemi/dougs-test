@@ -1,0 +1,12 @@
+apiVersion: v2
+name: dougs-test
+version: 1.0.0
+description: Dougs technical test
+type: application
+home: https://www.dougs.fr/
+sources:
+  - https://github.com/DromadaireEtDemi/dougs-test
+maintainers:
+  - name: Masset Gabriel
+    email: masset.gabriel@gmail.com
+

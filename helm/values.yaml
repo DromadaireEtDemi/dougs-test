@@ -1,0 +1,14 @@
+replicaCount: 1
+app:
+  name: dougs-test
+image:
+  repository: dougs-test
+  tag: 1.0.0
+service:
+  port: 8080
+  targetPort: 8080
+  name: dougs-test-service
+  type: LoadBalancer
+  selector:
+    app: dougs-test
+
