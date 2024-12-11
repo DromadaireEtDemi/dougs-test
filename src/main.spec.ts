@@ -7,8 +7,8 @@ jest.mock('@nestjs/core', () => ({
   __esModule: true,
   default: jest.fn(),
   NestFactory: {
-    create: jest.fn().mockResolvedValue(createMock<NestExpressApplication>()),
-  },
+    create: jest.fn().mockResolvedValue(createMock<NestExpressApplication>())
+  }
 }));
 jest.mock('./app.module');
 

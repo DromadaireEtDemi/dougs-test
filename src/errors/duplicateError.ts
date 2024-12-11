@@ -4,6 +4,6 @@ export class DuplicateError extends Error {
   }
 
   toString() {
-    return `Duplicsate: movement ${this.id}`;
+    return `Duplicate: movement ${this.id}`;
   }
 }
