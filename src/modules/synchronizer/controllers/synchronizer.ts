@@ -13,9 +13,8 @@ export class SynchronizerController {
 
   @HttpCode(HttpStatus.ACCEPTED)
   @Post('/movements/validate')
-  @UsePipes(new OrderByDatePipe())
   validateMovements(
-    @Body()
+    @Body(new OrderByDatePipe())
     validateMovements: ValidateMovementsDto,
     @Query('proceedWithDuplicate')
     proceedWithDuplicate = false
